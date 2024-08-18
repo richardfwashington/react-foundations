@@ -18,7 +18,7 @@
           <div><Header title="React"/><Header title="Also heading"/>
           <ul>
             {names.map((name) => (
-              <li>{name}</li>
+              <li key={name}>{name}</li>
             ))}
           </ul>
         </div>
