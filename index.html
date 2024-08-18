@@ -11,6 +11,10 @@
         return (<h1>{isNew() ? '*NEW* ': ''}{`Cool title: ${title}`} by {author()}</h1>);
       }
 
+      function handleClick() {
+        console.log('Button clicked');
+      }
+
       function HomePage() {
         const names = ['Ada LoveLace', 'Grace Hopper', 'Marie Curie'];
 
@@ -21,6 +25,7 @@
               <li key={index}>{name}</li>
             ))}
           </ul>
+          <button onClick={handleClick}>Like</button>
         </div>
           );
       }
