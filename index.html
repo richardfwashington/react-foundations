@@ -17,8 +17,8 @@
         return (
           <div><Header title="React"/><Header title="Also heading"/>
           <ul>
-            {names.map((name) => (
-              <li key={name}>{name}</li>
+            {names.map((name, index) => (
+              <li key={index}>{name}</li>
             ))}
           </ul>
         </div>
