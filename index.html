@@ -8,15 +8,19 @@
       const app = document.getElementById('app');
 
       function Header({title}) {
-        return (<h1>{`Cool title: ${title}`} by {auther()}</h1>);
+        return (<h1>{isNew() ? '*NEW* ': ''}{`Cool title: ${title}`} by {author()}</h1>);
       }
 
       function HomePage() {
         return (<div><Header title="React"/></div>);
       }
 
-      function auther() {
+      function author() {
         return 'P. Griffin';
+      }
+
+      function isNew() {
+        return true;
       }
 
       const root = ReactDOM.createRoot(app);
