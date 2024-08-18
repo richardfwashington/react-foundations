@@ -12,7 +12,17 @@
       }
 
       function HomePage() {
-        return (<div><Header title="React"/><Header title="Also heading"/></div>);
+        const names = ['Ada LoveLace', 'Grace Hopper', 'Marie Curie'];
+
+        return (
+          <div><Header title="React"/><Header title="Also heading"/>
+          <ul>
+            {names.map((name) => (
+              <li>{name}</li>
+            ))}
+          </ul>
+        </div>
+          );
       }
 
       function author() {
